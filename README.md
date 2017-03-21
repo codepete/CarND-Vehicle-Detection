@@ -85,8 +85,6 @@ In the the `Multiple Detections & False Positives` section of my Jupiter Noteboo
 
 In addition to this, to smooth out the results I utilize the last 10 heatmaps in order to create a better transition from frame to frame.
 
-Here's an example result showing the heatmap from a series of frames of video, the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the last frame of video:
-
 ### Here are visualizations of the test images and their corresponding heatmap. The left image is after application (looks at section 2 above to see what it looked like before) of heatmap technique. The right image is what the heat map looks like.
 
 ![alt text][image4]
