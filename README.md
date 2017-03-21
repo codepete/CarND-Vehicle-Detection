@@ -1,4 +1,4 @@
-**Vehicle Detection Project**
+# Vehicle Detection Project
 
 The goals / steps of this project are the following:
 
@@ -62,7 +62,7 @@ In my Jupiter Notebook, in the section `Training Classifier`, you'll see that I 
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-In the `Testing Classifier`, I went with the sub-sampling window search approach for a more efficient sliding window approach. I essentially extract the hog features, from `ystart=400` to `ystop=646` (as that section of the image contains the majority of the features we care about), once and sub-sample the results.
+In the `Testing Classifier`, I went with the sub-sampling window search approach for a more efficient sliding window approach. I essentially extract the hog features, from `ystart=400` to `ystop=656` (as that section of the image contains the majority of the features we care about), once and sub-sample the results.
 
 In my first attempt I overdid the amount of scales to use. I started out incrementing by .3 starting at 1.0 to 3.4. I then started playing with different intervals and settled with increments of .5 from 1.0 to 3.0 and found that it did OK identifying the cars.
 
